@@ -2,13 +2,15 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import ErrorPage from "./Pages/ErrorPage";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import PhotoConvert from "./Components/PhotoConvert";
+import PhotoConvert from "./Components/PhotoConvert/PhotoConvert";
 function App() {
   return (
     <>
       <div>
         <Header />
-        <Outlet />
+        <div className="min-h-screen">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     </>
